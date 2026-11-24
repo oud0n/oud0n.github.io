@@ -1,0 +1,53 @@
+/* 全アプリのサポート・プライバシーポリシー共通の見た目。
+   色は役割の名前だけを使う（値はデザインガイドの Paper テーマ。~/Work/phonotheque/private/docs/DESIGN_GUIDE.md）。 */
+:root {
+  color-scheme: light dark;
+  --background: #f6f2ea;
+  --surface: #fbf8f2;
+  --text-primary: #2b2722;
+  --text-secondary: #6b6054;
+  --separator: #e1d9c9;
+  --accent: #ae502d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1f1c18;
+    --surface: #2a2621;
+    --text-primary: #ece5d8;
+    --text-secondary: #a39886;
+    --separator: #3a342d;
+    --accent: #e07a52;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+
+header { margin-bottom: 1.5rem; }
+.site { margin: 0 0 1rem; font-size: .9rem; }
+h1, h2, h3 { line-height: 1.3; font-weight: 600; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); margin: 0; }
+.kind { margin: .2rem 0 1rem; color: var(--text-secondary); }
+nav { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
+
+section { background: var(--surface); border-radius: 1rem; padding: 1.5rem clamp(1rem, 4vw, 2rem); margin: 1rem 0; }
+h2 { font-size: 1.4rem; margin: 0 0 .6rem; }
+h3 { font-size: 1.05rem; margin: 1.6rem 0 .4rem; }
+p, ul, ol { margin: .4rem 0 1rem; }
+li { margin: .2rem 0; }
+.updated { color: var(--text-secondary); font-size: .9rem; }
+section > :last-child { margin-bottom: 0; }
+
+a { color: var(--accent); text-underline-offset: .19em; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+.apps { list-style: none; padding: 0; }
+.apps li { padding: .7rem 0; border-bottom: 1px solid var(--separator); }
+.apps li:last-child { border-bottom: none; }
+.apps .description { display: block; color: var(--text-secondary); font-size: .95rem; }
