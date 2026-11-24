@@ -12,6 +12,8 @@
   --warning-background: #f6dfcb;
   --accent: #33606f;
 }
+/* サイトのトップは、アプリのページより明るい地に赤の指し色（2026-11-24、持ち主の指定） */
+.site-top { --background: #eff0f3; --surface: #f8f8fa; --separator: #dfe0e6; --accent: #b02a3a; }
 .app-meishitrace { --accent: #2b4170; }
 .app-mtport { --accent: #2f56a6; }
 .app-laploupe { --accent: #9a3346; }
@@ -28,6 +30,7 @@
     --warning-background: #43301a;
     --accent: #86bac8;
   }
+  .site-top { --background: #1f2129; --surface: #272a34; --separator: #353946; --accent: #f08a96; }
   .app-meishitrace { --accent: #a3b6dd; }
   .app-mtport { --accent: #97b1e6; }
   .app-laploupe { --accent: #e79aa8; }
