@@ -75,3 +75,15 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 .apps .icon { width: 3.25rem; height: 3.25rem; }
 .apps .name { display: block; font-weight: 600; color: var(--accent); }
 .apps .description { display: block; color: var(--text-secondary); font-size: .95rem; }
+
+/* 製品案内の配布先。既存のサポートページには適用しない。 */
+.product-page .downloads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; list-style: none; padding: 0; margin: 1rem 0 1.5rem; }
+.product-page .downloads li { margin: 0; padding-top: 1rem; border-top: 1px solid var(--separator); min-width: 0; }
+.product-page h4 { font-size: 1.1rem; margin: 0 0 .5rem; }
+.product-page .download-link { display: inline-flex; align-items: center; min-height: 2.75rem; font-weight: 600; }
+.product-page .download-detail { font-size: .9rem; color: var(--text-secondary); }
+.product-page .notice { font-size: .9rem; }
+.product-page a { overflow-wrap: anywhere; }
+@media (max-width: 36rem) {
+  .product-page .downloads { grid-template-columns: 1fr; gap: 1rem; }
+}
