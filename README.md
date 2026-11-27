@@ -1,6 +1,6 @@
 # oud0n.github.io
 
-アプリのサポートページとプライバシーポリシーの置き場。`https://oud0n.github.io/<アプリ>/` で公開される。
+アプリの製品案内・サポートページ・プライバシーポリシーの置き場。`https://oud0n.github.io/<アプリ>/` で公開される。
 
 - `index.html`：アプリの一覧
 - `assets/site.css`：全ページ共通の見た目
@@ -16,6 +16,6 @@
 
 ### LapLoupe の配布リンク更新
 
-PC の新しい安定版を公開したら、`apps/laploupe/index.html` の日本語・英語両方の版番号と dmg/exe の URL を更新する。リンクは `oud0n/ds_universal` の公開 Releases に実在する安定版の配布物と照合する。旧配布物を使う場合も、最新リリースへのリンクは残す。
+PC の新しい安定版を公開したら、`apps/laploupe/index.html` の日本語・英語両方の版番号と dmg/exe の URL を更新する。リンクは `oud0n/ds_universal` の公開 Releases に実在する安定版の配布物と照合する。日本語・英語で Mac と Windows のリンク先・表示バージョンが一致することを確認する。旧配布物を使う場合も、最新リリースへのリンクは残す。
 
 ローカル確認：`python3 -m http.server 8765 --bind 127.0.0.1` をこのディレクトリから起動し、`http://127.0.0.1:8765/` と `/apps/laploupe/` を開く。スマホ幅・ライト／ダークと、各配布先へのリンクを確認する。静的 HTML のためビルドは不要。
