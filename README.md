@@ -10,6 +10,7 @@
 ## 製品案内
 
 - `apps/laploupe/index.html`：LapLoupe の概要と、iPhone/iPad・Mac・Windows・ブラウザ版への入口。
+- `apps/meishitrace/index.html`：MeishiTrace の概要と、App Store・既存サポートへの入口。
 - `apps/<アプリ>/` は製品案内用。同名リポジトリの Pages と競合しない URL にする。
 - `sitemap.xml`：サイトトップと製品ページ。`robots.txt` に発見用の URL を記載。
 - 製品ページのタイトル・説明・canonical・OG の URL は公開先に合わせる。
